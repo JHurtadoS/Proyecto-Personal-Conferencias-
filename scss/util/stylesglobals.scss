@@ -4,12 +4,12 @@ html {
     line-height: 1.4;
 }
 
-::-moz-selection {
+ ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
 
-::selection {
+ ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -161,14 +161,24 @@ textarea {
     margin: 0 auto;
 }
 
+.contenedor-div {
+    width: 95%;
+    margin: 0 auto;
+}
+
 h2,
 h3,
 h4 {
     font-family: 'Oswald', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 span,
-p {
+p,
+a {
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -176,109 +186,26 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 }
 
-.header {
-    height: 100vh;
-    background-image: url("/img/encabezado.jpg");
-    background-position: top center;
-    background-size: cover;
-}
-
-.header .contenedor-header {
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 10px;
-}
-
-.header .contenedor-header .iconos {
-    width: fit-content;
-    margin: 40px auto;
-    margin-top: 0;
-}
-
-.header .contenedor-header .iconos .icono {
+.icono {
     font-size: 25px;
     color: #FFFFFF;
     margin: 0 6px;
+    min-width: 25px;
 }
 
-.header .contenedor-header .infoGeneral-header {
-    display: block;
+.contenedor-boton {
     width: fit-content;
-    margin: 0 auto;
-    margin-top: 10px;
-    font-size: 20px;
-    justify-content: space-between;
+    margin: 2em 0;
 }
 
-@media (min-width: 900px) {
-    .header .contenedor-header .infoGeneral-header {
-        width: 57%;
-        display: flex;
-    }
-}
-
-.header .contenedor-header .infoGeneral-header a {
-    color: #fe4918;
-}
-
-.header .contenedor-header .infoGeneral-header p {
+.btn {
+    padding: 10px 2em;
+    text-decoration: none;
     color: #FFFFFF;
-    margin: 0 0;
-    margin-top: 6px;
-    margin-left: 10px;
-    font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
+    //color: #FFFFFF;
 }
 
-.header .contenedor-header .infoGeneral-header .fecha {
-    display: flex;
-}
-
-.header .contenedor-header .infoGeneral-header .lugar {
-    display: flex;
-}
-
-.header .contenedor-header .titulo-header {
-    display: flex;
-    padding-top: 1em;
-    width: fit-content;
-    margin: 0 auto;
-    margin: 0 auto;
-    color: #FFFFFF;
-}
-
-@media (min-width: 900px) {
-    .header .contenedor-header .titulo-header {
-        width: fit-content;
-    }
-}
-
-.header .contenedor-header .titulo-header h1 {
-    margin: 0 0;
-    font-weight: 900;
-    font-size: 100px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .header .contenedor-header .titulo-header h1 {
-        font-size: 80px;
-    }
-}
-
-@media (max-width: 610px) {
-    .header .contenedor-header .titulo-header h1 {
-        font-size: 60px;
-    }
-}
-
-.header .contenedor-header .slogan {
-    width: fit-content;
-    margin: 0 auto;
-}
-
-.header .contenedor-header .slogan p {
-    margin: 0 0;
-    color: #FFFFFF;
-    font-size: 20px;
+.naranja {
+    background-color: $naranja;
 }
