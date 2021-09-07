@@ -1,0 +1,33 @@
+@import "../../fontawesome/scss/fontawesome.scss";
+@import "../../fontawesome/scss/solid.scss";
+@import "../../fontawesome/scss/brands.scss";
+.user {
+    @extend %fa-icon;
+    @extend .fas;
+    &:before {
+        content: fa-content($fa-var-user);
+    }
+}
+
+.twitter {
+    @extend %fa-icon;
+    @extend .fab;
+    &:before {
+        content: fa-content($fa-var-twitter);
+    }
+}
+
+@import 'util/normalize';
+@import 'util/variables.scss';
+@import 'util/stylesglobals.scss';
+@import 'util/mixins.scss';
+@import 'index/main';
+@import 'index/barra';
+@import 'index/programa-conferencia';
+@import 'index/invitados';
+@import 'index/stats';
+@import 'index/precios';
+@import 'index/mapa';
+@import 'index/testimoniales';
+@import 'index/registro';
+@import 'index/footer';

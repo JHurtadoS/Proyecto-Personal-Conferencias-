@@ -1,0 +1,67 @@
+.barra {
+    padding: 2rem 0;
+    width: 100%;
+    background-color: #222;
+    .barra-contenedor {
+        @include desktop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            img {
+                max-height: 3.5em;
+            }
+        }
+        .links {
+            margin: 2em auto;
+            margin-bottom: 1em;
+            display: flex;
+            @include telefono {
+                display: flex;
+                flex-direction: column;
+                a {
+                    width: 100%;
+                }
+            }
+            @include desktop {
+                margin: 0 0;
+            }
+            a {
+                margin: 15px auto;
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                @include telefono {
+                    display: block;
+                    margin: 10px auto;
+                    padding: 1rem 0;
+                    text-align: center;
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+                &:hover {
+                    transition: 0.3s;
+                    background-color: $naranja;
+                    color: #FFFFFF;
+                }
+                &:last-of-type {
+                    //margin: 15px auto;
+                    color: $naranja;
+                    border: 1px;
+                    border-style: solid;
+                    &:hover {
+                        color: #FFFFFF;
+                        border-color: $naranja;
+                    }
+                }
+                text-decoration: none;
+                color: #FFFFFF;
+                font-weight: 700;
+                font-size: 1.8rem;
+                margin: 0 1em;
+            }
+        }
+    }
+}

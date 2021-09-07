@@ -1,0 +1,41 @@
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin telefono {
+    @media (max-width: #{$telefono}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin tarjeta {
+    @media (max-width: #{$breakpoint-tarjeta}) {
+        @content;
+    }
+}
+
+@mixin tarjeta-movil {
+    @media (max-width: #{$breakpoint-tarjeta-movil}) {
+        @content;
+    }
+}
+
+@mixin tarjetas-precios {
+    @media (max-width: #{$breakpoint-tarjetas}) {
+        @content;
+    }
+}
+
+@mixin testimoniales {
+    @media (max-width: #{$breakpoint-testimoniales}) {
+        @content;
+    }
+}

@@ -1,0 +1,79 @@
+.testimoniales {
+    margin: 27.5px auto;
+    margin-bottom: 120px;
+    .contenedor-testimoniales {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+        @include testimoniales {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 20px;
+            .tes-3 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                margin: 0 auto;
+                width: 50%;
+            }
+        }
+        @include tablet {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 20px;
+            .testimonial {
+                width: 93%;
+                margin: 0 auto;
+            }
+            .tes-2 {
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            .tes-3 {
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+        }
+        .testimonial {
+            display: flex;
+            &:before {
+                content: '\201c';
+                font-size: 65px;
+                color: $naranja;
+                margin-right: 8px;
+                font-weight: 700;
+            }
+            background-color: white;
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgb(204, 190, 190);
+            padding: 30px;
+            .descripcion {
+                line-height: 2;
+            }
+            .autor-testimonial {
+                margin-top: 15px;
+                display: flex;
+                align-items: center;
+                .imagen-autor {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 60px;
+                    background-image: url(/src/img/invitado1.jpg);
+                    background-position: center center;
+                    background-size: cover;
+                }
+                .info-autor {
+                    margin-left: 10px;
+                    h4 {
+                        font-weight: 500;
+                        color: $naranja;
+                        margin: 0;
+                    }
+                    p {
+                        margin: 0 0;
+                    }
+                }
+            }
+        }
+    }
+}

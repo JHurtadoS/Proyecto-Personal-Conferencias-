@@ -12,19 +12,14 @@
 
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-
-
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/brands.css">
+    <!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="dist/main.css">
+    <link rel="stylesheet" href="build/main.css">
 
 
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
 </head>
 
 <body>
@@ -56,7 +51,7 @@
                 <h1>GDLWEBCAMP</h1>
             </div>
             <div class="slogan">
-                <P>La mejor conferencia de<span> diseño web</span></P>
+                <P>"La mejor conferencia de<span> diseño web"</span></P>
 
             </div>
         </div>
@@ -65,7 +60,7 @@
         <div class="barra-contenedor contenedor">
             <div class="logo">
                 <a href="#">
-                    <img src="/img/logo.svg" alt="">
+                    <img src="/src/img/logo.svg" alt="">
                 </a>
             </div>
             <div class="links">
@@ -83,7 +78,7 @@
 
                 <h2 class="tl-titulo-programa">LA MEJOR CONFERENCIA DE DISEÑO WEB EN ESPAÑOL</h2>
                 <div class="separador">
-                    <img src="img/separador.png" alt="">
+                    <img src="/src/img/separador.png" alt="">
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur iste beatae, obcaecati sint recusandae aliquid molestiae repellendus fugiat rem culpa quis neque animi sequi vitae dicta necessitatibus molestias consequatur! Lorem
                     stiae repellendus fugiat rem culpa quis neque animi sequi vitae dicta necessitatibus molestias consequatur!
@@ -92,17 +87,17 @@
 
             <div class="Pcontent-contenido-programa">
                 <div class="video">
-                    <video autoplay loop poster="/img/bg-talleres.jpg">
-                        <source src="video/video.mp4" type="video/mp4">
-                        <source src="video/video.webm" type="video/webm">
-                        <source src="video/video.ogv" type="video/ogg">
+                    <video autoplay loop poster="/src/img/bg-talleres.jpg">
+                        <source src="/src/video/video.mp4" type="video/mp4">
+                        <source src="/src/video/video.webm" type="video/webm">
+                        <source src="/src/video/video.ogv" type="video/ogg">
                     </video>
                 </div>
                 <div class="tarjeta-contenido-programa">
 
                     <h3>PROGRAMA DEL EVENTO</h3>
                     <div class="separador">
-                        <img src="img/separador.png" alt="">
+                        <img src="/src/img/separador.png" alt="">
                     </div>
 
                     <div class="tipos-seminarios contenedor-div">
@@ -130,14 +125,14 @@
                         <h4>HTML5, CSS3, JavaScript</h4>
                         <div class="descripcion-seminario log-des">
                             <div class="icono">
-                                <i class="far fa-clock"></i>
+                                <i class="fas fa-clock"></i>
                             </div>
                             <p>14:00 hrs</p>
                         </div>
 
                         <div class="descripcion-seminario log-des">
                             <div class="icono">
-                                <i class="far fa-calendar-alt"></i>
+                                <i class="fas fa-calendar"></i>
                             </div>
                             <p>10 Dic</p>
                         </div>
@@ -155,14 +150,14 @@
                         <h4>HTML5, CSS3, JavaScript</h4>
                         <div class="descripcion-seminario log-des">
                             <div class="icono">
-                                <i class="far fa-clock"></i>
+                                <i class="fas fa-clock"></i>
                             </div>
                             <p>14:00 hrs</p>
                         </div>
 
                         <div class="descripcion-seminario log-des">
                             <div class="icono">
-                                <i class="far fa-calendar-alt"></i>
+                                <i class="fas fa-calendar"></i>
                             </div>
                             <p>10 Dic</p>
                         </div>
@@ -183,15 +178,401 @@
             </div>
 
         </section>
+
+        <seccion class="invitados">
+            <h3>NUESTROS INVITADOS</h3>
+
+            <div class="separador">
+                <img src="/src/img/separador.png" alt="">
+            </div>
+
+
+            <div class="contenedor-carrusel">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="contenedor-invitados contenedor">
+                                    <div class="invitado in-1">
+                                        <div class="contenido-invitado">
+                                            <p>Estepa Ramirez</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="contenedor-invitados contenedor">
+                                    <div class="invitado in-2">
+                                        <div class="contenido-invitado">
+                                            <p>Estepa Ramirez</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="contenedor-invitados contenedor">
+                                    <div class="invitado in-3">
+                                        <div class="contenido-invitado">
+                                            <p>Estepa Ramirez</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="contenedor-invitados contenedor">
+                                    <div class="invitado in-4">
+                                        <div class="contenido-invitado">
+                                            <p>Estepa Ramirez</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="contenedor-invitados contenedor">
+                                    <div class="invitado in-5">
+                                        <div class="contenido-invitado">
+                                            <p>Estepa Ramirez</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="contenedor-invitados contenedor">
+                                    <div class="invitado in-6">
+                                        <div class="contenido-invitado">
+                                            <p>Estepa Ramirez</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div data-glide-el="controls" class="controls">
+                        <button class="arrow arrow-back slider__arrow slider__arrow--prev glide__arrow glide__arrow--prev" data-glide-dir="<">
+                           <i class="fas fa-arrow-circle-left"></i>
+                        </button>
+
+                        <button class="arrow arrow-next slider__arrow slider__arrow--next glide__arrow glide__arrow--next" data-glide-dir=">">
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]">
+                        <button class="slider__bullet glide__bullet" data-glide-dir="=0"></button>
+                        <button class="slider__bullet glide__bullet glide__bullet--active" data-glide-dir="=1"></button>
+                        <button class="slider__bullet glide__bullet" data-glide-dir="=2"></button>
+                        <button class="slider__bullet glide__bullet" data-glide-dir="=3"></button>
+                        <button class="slider__bullet glide__bullet" data-glide-dir="=4"></button>
+                        <button class="slider__bullet glide__bullet" data-glide-dir="=5"></button>
+                        <button class="slider__bullet glide__bullet" data-glide-dir="=6"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-invitados contenedor desk-tablet">
+                <div class="invitado in-1">
+                    <div class="contenido-invitado">
+                        <p>Estepa Ramirez</p>
+                    </div>
+                </div>
+                <div class="invitado in-2">
+                    <div class="contenido-invitado">
+                        <p>Estepa Ramirez</p>
+                    </div>
+                </div>
+                <div class="invitado in-3">
+                    <div class="contenido-invitado">
+                        <p>Estepa Ramirez</p>
+                    </div>
+                </div>
+                <div class="invitado in-4">
+                    <div class="contenido-invitado">
+                        <p>Estepa Ramirez</p>
+                    </div>
+                </div>
+                <div class="invitado in-5">
+                    <div class="contenido-invitado">
+                        <p>Estepa Ramirez</p>
+                    </div>
+                </div>
+                <div class="invitado in-6">
+                    <div class="contenido-invitado">
+                        <p>Estepa Ramirez</p>
+                    </div>
+                </div>
+            </div>
+        </seccion>
+
+        <section class="stats">
+            <div class="backgorund-resumen">
+                <div class="contenedor-stats">
+                    <div class="data">
+                        <p class="numero">6</p>
+                        <p class="des-num">INVITADOS</p>
+                    </div>
+                    <div class="data">
+                        <p class="numero">15</p>
+                        <p class="des-num">TALLERES</p>
+                    </div>
+                    <div class="data">
+                        <p class="numero">3</p>
+                        <p class="des-num">DIAS</p>
+                    </div>
+                    <div class="data">
+                        <p class="numero">9</p>
+                        <p class="des-num">CONFERECIAS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="precios">
+            <h3>PRECIOS</h3>
+            <div class="separador">
+                <img src="/src/img/separador.png" alt="">
+            </div>
+            <div class="contenedor-precios contenedor">
+                <div class="tarjeta-precio tar-1">
+                    <div class="contenedor-tarjeta">
+                        <h4></h4>
+                        <span class="precio">$45</span>
+                        <div class="feature">
+                            <div class="icono">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>BOCADILLOS GRATIS</p>
+                        </div>
+                        <div class="feature">
+                            <div class="icono">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>TODAS LAS CONFERENCIAS</p>
+                        </div>
+                        <div class="feature">
+                            <div class="icono">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>TODAS LOS TALLERES</p>
+                        </div>
+                        <div class="contenedor-boton">
+                            <a class="btn" href="#">VER TODOS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-precio" id="tar-2">
+                    <div class="contenedor-tarjeta">
+                        <h4>PASE POR 2 DIAS</h4>
+                        <p class="precio">$45</p>
+                        <div class="feature">
+                            <div class="icono">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>BOCADILLOS GRATIS</p>
+                        </div>
+                        <div class="feature">
+                            <div class="icono">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>TODAS LAS CONFERENCIAS</p>
+                        </div>
+                        <div class="feature">
+                            <div class="icono">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>TODAS LOS TALLERES</p>
+                        </div>
+                        <div class="contenedor-boton">
+                            <a class="btn" href="#">VER TODOS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-precio tar-3 " id="tar-3">
+                    <div class="contenedor-tarjeta">
+                        <h4>PASE POR 2 DIAS</h4>
+                        <span class="precio">$45</span>
+                        <div class="feature">
+                            <div class="icono">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>BOCADILLOS GRATIS</p>
+                        </div>
+                        <div class="feature">
+                            <div class="icono">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>TODAS LAS CONFERENCIAS</p>
+                        </div>
+                        <div class="feature">
+                            <div class="icono">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>TODAS LOS TALLERES</p>
+                        </div>
+                        <div class="contenedor-boton">
+                            <a class="btn" href="#">VER TODOS</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mapa">
+
+        </section>
+
+        <section class="testimoniales contenedor">
+            <h3>TESTIMONIALES</h3>
+            <div class="separador">
+                <img src="/src/img/separador.png" alt="">
+            </div>
+            <div class="contenedor-testimoniales">
+                <div class="testimonial tes-1">
+                    <div class="contenedor-testimonial">
+                        <div class="descripcion">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam maiores aperiam laudantium totam iure assumenda dolor. Doloremque sunt autem qui. I usto molestiae alias odit ex accusamus laboriosam natus hic illo.
+                            </p>
+                        </div>
+                        <div class="autor-testimonial">
+                            <div class="imagen-autor"></div>
+                            <div class="info-autor">
+                                <h4>Miguel estepa</h4>
+                                <p>Diseñador en @prisma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial tes-2">
+                    <div class="contenedor-testimonial">
+                        <div class="descripcion">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam maiores aperiam laudantium totam iure assumenda dolor. Doloremque sunt autem qui. I usto molestiae alias odit ex accusamus laboriosam natus hic illo.
+                            </p>
+                        </div>
+                        <div class="autor-testimonial">
+                            <div class="imagen-autor"></div>
+                            <div class="info-autor">
+                                <h4>Miguel estepa</h4>
+                                <p>Diseñador en @prisma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial tes-3">
+                    <div class="contenedor-testimonial">
+                        <div class="descripcion">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam maiores aperiam laudantium totam iure assumenda dolor. Doloremque sunt autem qui. I usto molestiae alias odit ex accusamus laboriosam natus hic illo.
+                            </p>
+                        </div>
+                        <div class="autor-testimonial">
+                            <div class="imagen-autor"></div>
+                            <div class="info-autor">
+                                <h4>Miguel estepa</h4>
+                                <p>Diseñador en @prisma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="registro">
+            <div class="contenedor-registro">
+                <p>registrate al newstter</p>
+                <h1>GDLWEBCAMP</h1>
+                <div class="contenedor-boton">
+                    <a class="btn" href="registro.html">REGISTRO</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contador contenedor">
+            <h3>FALTAN</h3>
+            <div class="separador">
+                <img src="/src/img/separador.png" alt="">
+            </div>
+            <div class="contenedor-stats">
+                <div class="data">
+                    <p class="numero">80</p>
+                    <p class="des-num">DIAS</p>
+                </div>
+                <div class="data">
+                    <p class="numero">15</p>
+                    <p class="des-num">HORAS</p>
+                </div>
+                <div class="data">
+                    <p class="numero">5</p>
+                    <p class="des-num">MINUTOS</p>
+                </div>
+                <div class="data">
+                    <p class="numero">30</p>
+                    <p class="des-num">SEGUNDOS</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="contenedor contenedor-footer">
+
+                <div class="more-information">
+
+                    <div class="twists">
+                        <div class="contenedor-footer-1">
+                            <div class="titulo-footer">
+                                <h4>Ultimos<span>tweets</span></h4>
+                            </div>
+                            <div class="contenedor-twits">
+                                <a class="twitter-timeline" href="https://twitter.com/TwitterDev/lists/national-parks?ref_src=twsrc%5Etfw">A Twitter List by TwitterDev</a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="more-about-us">
+                        <div class="contenedor-footer-2">
+                            <div class="titulo-footer">
+                                <h4>Sobre <span>GLDWEBCAMP</span></h4>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam incidunt esse magni eius id quos mollitia facilis perspiciatis cumque provident, sequi qui quas libero fuga numquam, quisquam ducimus est.</p>
+                        </div>
+                    </div>
+
+                    <div class="socialmedia">
+                        <div class="titulo-footer">
+                            <h4>Redes <span>Sociales</span></h4>
+                        </div>
+                        <div class="iconos-media iconos">
+                            <a href="#" class="icono"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="icono"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="icono"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" class="icono"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="icono"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="contenedor">Todos los derechos reservados GDLWEBCAMP 2021 </p>
+            </div>
+        </footer>
+
+        <script>
+        </script>
     </main>
 
-    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    </div6 </seccion6 </main6 <script src="/src/js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+        window.jQuery || document.write('<script src="src/js/vendor/jquery-3.4.1.min.js"><\/script>')
     </script>
-    <script src="js/plugins.js"></script>
-    <script src="/dist/bundle.js"></script>
+    <script src="/src/js/plugins.js"></script>
+    <script src="/build/bundle.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

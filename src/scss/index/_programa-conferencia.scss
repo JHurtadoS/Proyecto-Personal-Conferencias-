@@ -1,0 +1,82 @@
+.contenido-programa {
+    p {
+        font-size: 1.6rem;
+    }
+    .tl-titulo-programa {
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: 400;
+    }
+    .Pcontent-contenido-programa {
+        position: relative;
+        display: flex;
+        .video {
+            max-width: 100%;
+            overflow-x: hidden;
+            max-height: 850px;
+            overflow-y: hidden;
+        }
+        .tarjeta-contenido-programa {
+            position: absolute;
+            top: 63.5px;
+            left: 20px;
+            height: fit-content;
+            //height: 91%;
+            margin: 0 auto;
+            margin-left: 3em;
+            //background-color: black;
+            background: rgb(245, 245, 245);
+            background: linear-gradient(90deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 252, 252, 1) 70%, rgba(245, 245, 245, 1) 100%);
+            width: 60%;
+            @include tarjeta-movil {
+                width: 93%;
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+            .log-des {
+                display: flex;
+                align-items: center;
+                p {
+                    margin-left: 5px;
+                    margin: 0 0;
+                }
+                .icono {
+                    color: #fe4918;
+                }
+            }
+            .tipos-seminarios {
+                display: flex;
+                justify-content: space-between;
+                @include tarjeta {
+                    display: block;
+                    margin: 1em 0;
+                }
+                .tp-seminario {
+                    p {
+                        font-weight: 700;
+                    }
+                }
+            }
+            .seminario {
+                h4 {
+                    color: $naranja;
+                    font-size: 2.5rem;
+                    font-weight: 400;
+                }
+                .descripcion-seminario {
+                    margin: 5px 0;
+                    p {
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .contenedor-boton {
+                //margin-left: 1em;
+                width: 95%;
+                display: grid;
+                justify-content: end;
+                margin: 2em auto;
+            }
+        }
+    }
+}

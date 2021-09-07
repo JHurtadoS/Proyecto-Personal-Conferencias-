@@ -1,0 +1,143 @@
+.contenedor-twits {
+    height: 230px;
+    max-width: 400px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.timeline-Widget {
+    border-radius: 0;
+}
+
+.footer {
+    background-color: #333;
+    .titulo-footer,
+    h4 {
+        width: fit-content;
+        margin: 0 0 0.5rem 0;
+        font-size: 3rem;
+        display: block;
+        color: white;
+        span {
+            font-size: 3rem;
+            font-family: 'Oswald', sans-serif;
+            color: $naranja;
+        }
+    }
+    .titulo-footer {
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
+    }
+    .socialmedia {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        .titulo-footer {
+            margin: 0 auto;
+        }
+        margin-bottom: 2rem;
+        .iconos {
+            width: fit-content;
+            display: flex;
+            width: 96%;
+            justify-content: space-between;
+            .icono {
+                margin: 0 0;
+            }
+        }
+    }
+    .contenedor-footer {
+        padding: 2.7rem 0;
+        max-width: 1100px;
+        .more-information {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 4rem;
+            @include tablet {
+                .socialmedia {
+                    align-items: center;
+                }
+                grid-template-rows: 7rem,
+                1fr,
+                1fr;
+                grid-template-columns: 1fr;
+                row-gap: 2rem;
+                .contenedor-footer-1,
+                .contenedor-footer-2 {
+                    //transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                    transition: ease-in 1s;
+                    opacity: 0;
+                    height: 0;
+                    overflow: hidden;
+                }
+                .twists {
+                    &:before {
+                        content: "Twits recientes";
+                        font-size: 2rem;
+                        display: flex;
+                        height: 7rem;
+                        justify-content: center;
+                        background-color: white;
+                        align-items: center;
+                        border-radius: 10px;
+                    }
+                    &:hover:before {
+                        transition: ease-in-out 0.5s;
+                        cursor: pointer;
+                        background-color: rgb(228, 228, 228);
+                    }
+                    &.activo {
+                        .contenedor-footer-1 {
+                            //display: block;
+                            margin-top: 1rem;
+                            opacity: 1;
+                            height: auto;
+                        }
+                    }
+                }
+                .more-about-us {
+                    &:before {
+                        content: "Mas sobre nosostros";
+                        font-size: 2rem;
+                        color: #222;
+                        display: flex;
+                        height: 7rem;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: white;
+                        border-radius: 10px;
+                    }
+                    &:hover:before {
+                        transition: ease-in-out 0.5s;
+                        cursor: pointer;
+                        background-color: rgb(228, 228, 228);
+                    }
+                    &.activo {
+                        .contenedor-footer-2 {
+                            //display: block;
+                            // visibility: visible;
+                            margin-top: 1rem;
+                            opacity: 1;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .more-about-us {
+                text-align: justify;
+                color: white;
+            }
+        }
+    }
+    .copyright {
+        padding: 1.5rem 0;
+        display: block;
+        background-color: #222;
+        text-align: center;
+        p {
+            color: white;
+        }
+    }
+}

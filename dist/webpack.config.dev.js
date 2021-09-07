@@ -8,10 +8,11 @@ var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 var devMode = process.env.NODE_ENV !== "production";
 module.exports = {
-  entry: './js/main.js',
+  mode: 'development',
+  entry: './src/js/main.js',
   watch: true,
   output: _defineProperty({
-    path: path.resolve(__dirname + '/dist'),
+    path: path.resolve(__dirname + '/build'),
     filename: '[name].js'
   }, "filename", 'bundle.js'),
   plugins: [new MiniCssExtractPlugin({
