@@ -38,7 +38,7 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: "css/[name].css",
-            chunkFilename: "[id].css",
+            chunkFilename: "dist/[id].css",
         }),
         new ImageMinimizerPlugin({
             test: /\.(jpe?g)$/i,
@@ -59,12 +59,14 @@ module.exports = {
     module: {
         rules: [{
                 test: /.s?css$/,
+
                 use: [MiniCssExtractPlugin.loader,
                     { loader: "css-loader", options: { sourceMap: true } },
                     { loader: "postcss-loader", options: { sourceMap: true } },
                     { loader: "sass-loader", options: { sourceMap: true } },
                 ],
             },
+
 
         ],
     },

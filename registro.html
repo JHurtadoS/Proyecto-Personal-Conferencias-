@@ -47,11 +47,31 @@
             <img src="/src/img/separador.png" alt="">
         </div>
         <form action="" class="formulario form-registro">
-            <fieldset>
+
+            <fieldset class="contenedor">
+
+                <div class="credenciales">
+                    <div class="campo">
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text" name="Nombre" id="" placeholder="Nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="Nombre">Apellido:</label>
+                        <input type="text" name="Apellido" id="" placeholder="Apellido">
+                    </div>
+                    <div class="campo">
+                        <label for="Nombre">Email:</label>
+                        <input type="text" name="Email" id="" placeholder="Email">
+                    </div>
+                </div>
+            </fieldset>
+
+            <h2>Escoge Tus boletos</h2>
+            <fieldset class="field-boletos">
 
                 <div class="boletos">
                     <div class="contenedor-precios contenedor">
-                        <div class="tarjeta-precio tar-1">
+                        <div class="tarjeta-precio tar-1" id="tar-1">
                             <div class="contenedor-tarjeta">
                                 <h4></h4>
                                 <span class="precio">$45</span>
@@ -136,14 +156,274 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset></fieldset>
-            <fieldset></fieldset>
-            <fieldset></fieldset>
-            <fieldset></fieldset>
+
+            <h2>Eligue los eventos en los que quieres participar</h2>
+            <fieldset class="contenedor">
+                <div class="eventos-actuales">
+                    <div class="eventos-formulario dia-1">
+                        <h3>Viernes</h3>
+                        <div class="eventos-columnas">
+                            <div class="evento-column">
+                                <h4>Talleres:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-1">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-2">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-3">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-4">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-5">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+
+                            </div>
+                            <div class="evento-column">
+                                <h4>Conferencias:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-6">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-7">
+                                    <label for=""><span>10:00</span>Tecnologias del futuro</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-8">
+                                    <label for=""><span>10:00</span>Como ser freelance</label>
+                                </div>
+
+                            </div>
+                            <div class="evento-column">
+                                <h4>Seminarios:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Seminarios" id="even-9">
+                                    <label for=""><span>10:00</span>diseño UI y UX para moviles</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventos-formulario dia-2">
+                        <h3>Viernes</h3>
+                        <div class="eventos-columnas">
+                            <div class="evento-column">
+                                <h4>Talleres:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-1">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-2">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-3">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-4">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-5">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+
+                            </div>
+                            <div class="evento-column">
+                                <h4>Conferencias:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-6">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-7">
+                                    <label for=""><span>10:00</span>Tecnologias del futuro</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-8">
+                                    <label for=""><span>10:00</span>Como ser freelance</label>
+                                </div>
+
+                            </div>
+                            <div class="evento-column">
+                                <h4>Seminarios:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Seminarios" id="even-9">
+                                    <label for=""><span>10:00</span>diseño UI y UX para moviles</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventos-formulario dia-3">
+                        <h3>Viernes</h3>
+                        <div class="eventos-columnas">
+                            <div class="evento-column">
+                                <h4>Talleres:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-1">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-2">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-3">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-4">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-5">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+
+                            </div>
+                            <div class="evento-column">
+                                <h4>Conferencias:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-6">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-7">
+                                    <label for=""><span>10:00</span>Tecnologias del futuro</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-8">
+                                    <label for=""><span>10:00</span>Como ser freelance</label>
+                                </div>
+
+                            </div>
+                            <div class="evento-column">
+                                <h4>Seminarios:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Seminarios" id="even-9">
+                                    <label for=""><span>10:00</span>diseño UI y UX para moviles</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eventos-formulario dia-4">
+                        <h3>Viernes</h3>
+                        <div class="eventos-columnas">
+                            <div class="evento-column">
+                                <h4>Talleres:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-1">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-2">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-3">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-4">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Talleres" id="even-5">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+
+                            </div>
+                            <div class="evento-column">
+                                <h4>Conferencias:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-6">
+                                    <label for=""><span>10:00</span>Seguridad en la web</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-7">
+                                    <label for=""><span>10:00</span>Tecnologias del futuro</label>
+                                </div>
+                                <div class="campo">
+                                    <input type="checkbox" name="Conferencias" id="even-8">
+                                    <label for=""><span>10:00</span>Como ser freelance</label>
+                                </div>
+
+                            </div>
+                            <div class="evento-column">
+                                <h4>Seminarios:</h4>
+                                <div class="campo">
+                                    <input type="checkbox" name="Seminarios" id="even-9">
+                                    <label for=""><span>10:00</span>diseño UI y UX para moviles</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <h2>PAGOS Y EXTRAS</h2>
+            <fieldset class="contenedor">
+
+                <div class="contenedor-pagosYExtras">
+                    <div class="PagosYExtras">
+                        <div class="campo">
+                            <label for="">Camisa del evento $10<span>(promocion 7% dto.)</span></label>
+                            <input type="number" name="Ncamisas" id="Ncamisas">
+                        </div>
+                        <div class="campo">
+                            <label for="">Paquete de 10 etiquetas $2 <span>(HTML5,Javascript,Chrome)</span></label>
+                            <input type="number" name="Ncamisas" id="Ncamisas">
+                        </div>
+                        <div class="campo">
+                            <label for="">Seleccione un regalo</label>
+                            <select name="regalos" id="regalos">
+                                <option value="reg-1">Regalo1</option>
+                                <option value="reg-2">Regalo2</option>
+                                <option value="reg-3">Regalo3</option>
+                                <option value="reg-4">Regalo4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cotizacion">
+                        <div class="resumen">
+                            <p class="resumen-titulo">Resumen:</p>
+                            <div class="contenido-resumen">
+                                <div class="item-resumen">
+                                    <p>Ejemplo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <p class="titulo-total">Total:</p>
+                            <p class="precio-total">$1000</p>
+                        </div>
+
+                    </div>
+                </div>
+            </fieldset>
+
 
         </form>
-
     </main>
+
 
     <footer class="footer">
         <div class="contenedor contenedor-footer">
@@ -191,6 +471,15 @@
             <p class="contenedor">Todos los derechos reservados GDLWEBCAMP 2021 </p>
         </div>
     </footer>
+
+
+
+
+
+
+
+
+
 
     </div6 </seccion6 </main6 <script src="/src/js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

@@ -1,15 +1,29 @@
 .precios {
-    margin: 60px 0;
+    margin: 53px 0 0 0;
+    height: 76rem;
+    .separador {
+        margin-bottom: 3rem;
+    }
+}
+
+#tar-1 {
+    padding: 1.1rem 0;
+}
+
+#tar-1,
+#tar-3 {
+    margin-top: 8rem;
 }
 
 .contenedor-precios {
-    height: 45rem;
+    height: 70rem;
     @include tarjetas-precios {
         height: auto;
     }
     margin: 1.5em auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    place-content: baseline;
     column-gap: 18px;
     .tarjeta-precio {
         padding: 3px;
@@ -124,5 +138,13 @@
             grid-column-start: 1;
             grid-column-end: 2;
         }
+    }
+}
+
+#tar-2 {
+    height: 55rem;
+    margin-top: 1rem;
+    .contenedor-tarjeta {
+        margin-top: 6rem;
     }
 }
