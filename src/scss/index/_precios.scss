@@ -1,6 +1,12 @@
 .precios {
     margin: 53px 0 0 0;
     height: 76rem;
+    @include telefono {
+        height: 185rem;
+    }
+    @include tarjetas-precios {
+        height: 115rem;
+    }
     .separador {
         margin-bottom: 3rem;
     }
@@ -12,7 +18,9 @@
 
 #tar-1,
 #tar-3 {
-    margin-top: 8rem;
+    @include desktop {
+        margin-top: 8rem;
+    }
 }
 
 .contenedor-precios {
@@ -142,9 +150,14 @@
 }
 
 #tar-2 {
-    height: 55rem;
+    height: 43rem;
+    @include desktop {
+        height: 55rem;
+    }
     margin-top: 1rem;
     .contenedor-tarjeta {
-        margin-top: 6rem;
+        @include desktop {
+            margin-top: 6rem;
+        }
     }
 }
